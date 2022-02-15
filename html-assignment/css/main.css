@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif; font-size: 18;
+}
+header , footer{
+    background-color: rgb(241, 240, 137);}
+.site-title{color: rgb(214, 75, 20);
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+ul{
+    list-style-type: square
+ }
+li:nth-child(odd){
+    background-color: rgb(180, 171, 171);
+} 
+a:hover  {
+    text-decoration: none; background-color: rgb(75, 235, 247);border-style: inset;border-color: rgb(233, 52, 28);
+}
+li:hover{
+    list-style-type: none
+}
+a:focus{
+    background-color: rgb(233, 229, 240);
+}
