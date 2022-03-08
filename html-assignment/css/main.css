@@ -2,12 +2,14 @@ body{
     font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif; font-size: 18;
 }
 header , footer{
-    background-color: rgb(241, 240, 137);}
+    background-color: rgb(241, 240, 137);
+}
+
 .site-title{color: rgb(214, 75, 20);
 }
 
 #my-image{
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 2px 1px rgb(235, 123, 31);
 }
 ul{
     list-style-type: square
