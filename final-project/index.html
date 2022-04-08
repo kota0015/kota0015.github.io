@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +16,15 @@
         <header >
             <div class="navbar">
                 <div class="container">
-                    <img src="images/logo.png" alt="logo" class="logo">
+                    <div class="logo-container">
+                        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+                        
+                    </div>
                     
                     <nav class="main-nav">
 
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a class="active" href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Team</a></li>
@@ -31,9 +34,13 @@
 
 
                     </nav>
-                    <div class="searc-box-wrapper">
-                        <input type="text" placeholder="Search" class="search-box-input">                
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="search-box-wrapper">
+                        <input type="text" placeholder="Search" class="search-box-input"> 
+                        <div class="mag-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>               
+                        
 
                     </div> 
                 </div>

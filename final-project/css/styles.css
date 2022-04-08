@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper{
+    max-width:1200px ;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 0 auto;
+
+}
+/* -----------------The header is the parent for log navbar and search box,nav at mobile to be column shape and row sahpe atdesktop, best to use flex  a*/
+.navbar{
+    box-sizing: border-box;
+    background-color:#222;
+}
+.main-nav    {
+    
+}
+.main-nav ul{
+    background-color: rgb(242, 255, 0);
+    padding: 2px;
+    text-align: center;
+    
+}
+.main-nav ul li {
+    
+    background-color: #222;
+    white-space: nowrap;
+    
+    
+}
+.main-nav ul li a {
+    color:#ffe6ac ;
+    display: block;
+    width:10%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom:15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.main-nav ul li a.active{
+    background-color: #c78c06;
+    width: 100%;
+}
+.main-nav ul li a:hover {
+    background: #c78c06
+}
+.logo-container{
+    
+    display: flex;
+    align-items: center;
+    background-color:  #c78c06;
+    align-items: center;
+    
+}
+.logo{
+    padding-top:18px ;
+    padding-bottom: 18px;
+}
+.search-box-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#222; 
+    color: #ffe6ac;
+    height: 44px;
+    padding: 0 15px 15px 15px;
+    
+}
+.search-box-wrapper input {
+    width: 100%;
+  
+    padding:15px 0 15px 0
+   
+}
+.mag-box{
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+    margin: 0;
+    
+    height: 44px;
+    text-align: center;
+   
+    border: solid 1px;
+}
+i{
+    width: 50px;
+    text-align: center;
+    font-size:22px ;
+   
+    
+}
+::placeholder{
+    color: rgb(57, 62, 62);
+
+}
+
+
+
+
+
+/*a:link {background-color: #f67316;
+    
+    
+}
+a:visited{
+    background-color: ;
+    
+}*/
+
+
+}
+
+
+/* Welcome section has a background image with header and paragraph and buttin */
+
+
+
+
+
+/* About us section   area has a sold background color and image with header and pargraph in desktop version to use flex to dsplay  two columns  */
+
+
+
+/* our service as hero section  should  use grid to arrange service divisions   */
+
+
+
+
+/* our vision has  abckground image eith header and paragraph and button , the imag should be full wrapper widthnge service    */
+
+
+
+
+
+/* our team section has two images and two division each with two headars one horizantil line and paragrapth with sold background ?    */
+
+
+
+/* our team section has two images and two division each with two headars one horizantil line and paragrapth with sold background , i can use grid or flex to see waht best...?    */
+
+
+
+
+
+/* Contact section to consider two column and three rwos grid in descktop version, use input labels, impeded map and table .?    */
+
+/* Footer with copright paragrapth and source paragraph with anchor link .?    */
+
+
+
+
