@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eb6e79bd5c.js" crossorigin="anonymous"></script>
     <title>MTM6130 Final project - Kotaish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,64 +19,68 @@
     <!--header section to contain nav bar &logo with serach box -->
     <div class="wrapper">
         <header >
-            <div class="navbar">
-                <div class="container">
-                    <div class="logo-container">
-                        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
-                        
-                    </div>
+            
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="logo" class="logo">
                     
-                    <nav class="main-nav">
-
-                        <ul>
-                            <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        
-
-
-                    </nav>
-                    <div class="search-box-wrapper">
-                        <input type="text" placeholder="Search" class="search-box-input"> 
-                        <div class="mag-box">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-
-                        </div>               
-                        
-
-                    </div> 
                 </div>
+                
+                <nav class="main-nav">
 
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+
+
+                </nav>
+                <div class="search-box-wrapper">
+                    <input type="text" placeholder="Search" class="search-box-input"> 
+                    <div class="mag-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </div>               
+                    
+
+                </div> 
             </div>
+
+            
             
             
                         
             
             <!--this div to contain  welcome message with paragraph and the connect button -->
             <div class="welcome-message">
-                <h1>Welcome to Three Star Media</h1>
                 
-                <div class="welcom-area container">                  
+                
+                <div class="welcom-area-container container">
+                    <h1>Welcome to Three Star Media</h1>                  
                     
                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum exercitationem earum. Officia odit cumque aliquam soluta odio amet tempore!</p>
+
+                   <div class="link-button">
+                        <form method="get" action="/Connection_chanels">
+                        <button type="submit">Connect with us</button>
+                        
+                        </form>
+                        <i class="fa-solid fa-play"></i>
+    
+                   
+    
+                    </div>  
             
                 
                 </div>
-                <!--background image to be applied in css and to pay attention to the width -->
+                
+                
             </div> 
-            <div class="link-button">
-                <form method="get" action="/Connection_chanels">
-                    <button type="submit">Connect with us</button>
-                    
-                </form>
-                <i class="fa-solid fa-play"></i>
-
-               
-
-            </div>  
+            
         </header>
         <!-- this section to contain the  imag and (about us) text-->
         <section class="about_us">
