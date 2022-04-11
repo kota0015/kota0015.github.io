@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,24 +47,43 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* -----------------MY CODE STARTS HERE----------------*/
+
+
+
 /*google font applied to the wrapper*/
 .wrapper{
     max-width:1200px ;
     margin:0;
+    
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto 0 auto;
     font-family: 'Open Sans', sans-serif;
-    background-color: chartreuse;
+    background-color:#ffe6ac;
 
 }
+h2 ,  h3{
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    
+}
+
 /* -----------------The header is the parent for log navbar and search box,nav at mobile to be column shape and row sahpe atdesktop, best to use flex  a*/
 .container{
-    border:solid rgb(244, 240, 11);
-    margin: 0 15px 0 15px;
-    padding-left: 10px;
-
-
+    border:solid rgb(9, 186, 24);
+    padding-left: 15px;
+    
 }
+
 .navbar{
     box-sizing: border-box;
     background-color:#222;
@@ -199,9 +219,11 @@ a:visited{
 /* Welcome section has a background image with header and paragraph and buttin */
 .welcome-message{
     background-image: url(../images/main-banner.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size:100% 100% ;
     
+    background-size:100% 100% ;
+    background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -230,7 +252,7 @@ a:visited{
 
 }
 
-
+/* */
 .link-button{
     
     display: flex;
@@ -244,22 +266,86 @@ a:visited{
     background-color: #c78c06;
     
 }
+
 .link-button button{
     font-size: 20px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    
+}
+
+/* About us section   area has a sold background color and image with header and pargraph in desktop version to use flex to dsplay  two columns  */
+
+.about-us-container{
+    
+    margin: 10px 10px 0 10px;
+    background-color: #ffe6ac;
+
+
+}
+.imag-about-us{
+    width: 100%;
     
 }
 
 
 
 
-
-/* About us section   area has a sold background color and image with header and pargraph in desktop version to use flex to dsplay  two columns  */
-
-
-
 /* our service as hero section  should  use grid to arrange service divisions   */
+
+.our-services-container {
+    background-color: white;
+
+}
+.our-services-container img{
+    width: 100%;
+
+}
+
+.our-services h2 {
+    background-color: white;
+    padding-left: 10px;
+}
+
+
+
+.box-2{
+    background-color:#ffe6ac;
+    padding-left: 10px;
+    border: solid rgb(13, 215, 70);
+
+}
+.box-2 h3{
+    font-size: 1.5rem;
+    
+}
+.box-1{
+    border: solid rgb(237, 26, 11);
+    margin:0 10px 10px 10px
+}
+.plans-button {
+    
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 275px;
+      
+   
+    background-color:black
+    
+}
+.plans-button button{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -267,15 +353,110 @@ a:visited{
 /* our vision has  abckground image eith header and paragraph and button , the imag should be full wrapper widthnge service    */
 
 
+.our-vision{
+    
+    background-image: url(../images/vision.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    background-size:100% 100% ;
+    background-size: cover;
+    
+    padding-top: 80px;
+    padding-bottom: 10px;
+    border: solid #de188c 5px;
+    
+
+}
+.our-vision  h2 {
+    color: white;
+
+}
+.our-vision p {
+    color: white;
+
+}
+
+.learn-more  {
+   
+    
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 275px;
+      
+   
+    background-color:black
+    
+}
+.learn-more button{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
 
 
 
 /* our team section has two images and two division each with two headars one horizantil line and paragrapth with sold background ?    */
+.our-team{
+    background-color: white;
+}
+.our-team h2 {
+    background-color: white;
+    padding:30px 0 15px 15px;
+    
+}
 
+h4{
+    font-weight: bold;
+}
+.container-2 img{
+    width: 100%;
+}
+.container-2{
+    border: solid #222 5px;
+    background-color: white;
+    margin:0 15px 15px 15px;
+}
+hr{
+    border-top: solid #222 2px;
+    margin-right: 15px;
+}
+.ceo .box-2{
+    margin-bottom: 15px;
+}
 
-
-/* our team section has two images and two division each with two headars one horizantil line and paragrapth with sold background , i can use grid or flex to see waht best...?    */
-
+/* contact us form to apply full container width   */
+.contact-us{
+    background-color: white;
+    margin-top: 0;
+}
+.form-group{
+    padding-top: 20px;
+    padding-right:20px;
+}
+input{
+    width: 100%;
+    height: 1.5rem;
+  
+}
+textarea{
+    width: 100%;
+    height: 10rem;
+  
+}
+.message-container button{
+    color:white;
+    background-color: black;
+    margin-top: 10px;
+}
 
 
 
