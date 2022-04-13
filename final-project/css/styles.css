@@ -113,6 +113,8 @@ p{
     color:#ffe6ac ;
     display: block;
     font-size: 20px;
+    margin-top: -1px;
+    
     
     width:12%;
     text-decoration: none;
@@ -166,6 +168,8 @@ p{
     color: #ffe6ac;
     height: 44px;
     padding: 0 15px 15px 15px;
+    border: black 1px solid;
+   
     
     
 }
@@ -174,6 +178,8 @@ p{
     font-size: 20px;
     padding:15px 0 15px 15px;
     border: none;
+   
+    
     
    
 }
@@ -183,7 +189,7 @@ p{
     background-color: #222;
     margin: 0;
     
-    height: 44px;
+    height: 54px;
     text-align: center;
    
     border: solid 1px;
@@ -293,7 +299,7 @@ a:visited{
 
 
 
-/* our service as hero section  should  use grid to arrange service divisions   */
+/* our service as hero section  we should  use grid to arrange service divisions in media query   */
 
 .our-services-container {
     background-color: white;
@@ -352,7 +358,7 @@ a:visited{
 
 
 
-/* our vision has  abckground image eith header and paragraph and button , the imag should be full wrapper widthnge service    */
+/* our vision has  abckground image with header and paragraph and button , the imag should be full wrapper widthnge service    */
 
 
 .our-vision{
@@ -487,7 +493,7 @@ textarea{
 
 
 
-/* Impeded map styling     */
+/* Impeded map styling to have it responsive map width 100%    */
 .imp-map{
 
     padding-right:20px;
@@ -497,7 +503,7 @@ iframe{
     width: 100%;
 }
 
-/* Footer with copright paragrapth and source paragraph with anchor link .?    */
+/* Footer with copright paragrapth and source paragraph     */
 footer{
     padding-top: 10px;
     background-color: #222;
@@ -507,5 +513,43 @@ footer a{
     color: white;
 }
 
+/* -----------------Media Query starts here ----------------*/
+
+@media screen and (min-width: 760px) {
+
+    /*google font applied to the wrapper*/
+        .wrapper{
+        border:solid rgb(236, 25, 6) 1px;
+
+        }
+        .container-m{
+            border:solid rgb(73, 190, 22) 2px;
+            margin:0 50px 0 50px;
+           
+            
+        }
+        .navbar-container{
+            display: flex;
+
+            
+                border:solid rgb(228, 33, 179) .5rem;
+                background-color: #222;
+
+        }
+        ul{
+            display: flex;
+        }
+        .logo-container{
+            background-color:transparent
+        }
+
+
+
+            
+        }
+
+
+
+        }
 
 
