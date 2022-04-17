@@ -26,7 +26,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section,img {
 	display: block;
 }
 body {
@@ -53,14 +53,25 @@ table {
 
 
 /*google font applied to the wrapper*/
+html {
+    box-sizing: border-box;
+    
+    
+}
 .wrapper{
     max-width:1200px ;
+   
     padding-bottom: 20px;
+    
     
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto 0 auto;
     font-family: 'Open Sans', sans-serif;
     
+
+}
+img {
+    max-width:100% ;
 
 }
 h2 ,  h3{
@@ -86,7 +97,7 @@ p{
 }
 
 .navbar{
-    box-sizing: border-box;
+   
     background-color:#222;
     
 }
@@ -116,7 +127,7 @@ p{
     margin-top: -1px;
     
     
-    width:12%;
+    width:30%;
     text-decoration: none;
     text-align: center;
     padding-top: 15px;
@@ -147,6 +158,7 @@ p{
     background: #c78c06
 }
 
+
 .logo-container{
     
     display: flex;
@@ -162,18 +174,20 @@ p{
 }
 .search-box-wrapper{
     display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     background-color:#222; 
     color: #ffe6ac;
-    height: 44px;
-    padding: 0 15px 15px 15px;
-    border: black 1px solid;
+    padding: 0px 15px 15px 15px;
+   ;
+   
+   
    
     
     
 }
 .search-box-wrapper input {
+    
     width: 100%;
     font-size: 20px;
     padding:15px 0 15px 15px;
@@ -183,10 +197,10 @@ p{
     
    
 }
-.mag-box{
+.magnifier-box{
     display: flex;
     align-items: center;
-    background-color: #222;
+    background-color:#222
     margin: 0;
     
     height: 54px;
@@ -224,6 +238,18 @@ a:visited{
 
 
 /* Welcome section has a background image with header and paragraph and buttin */
+
+.welcom-area-container{
+    border:solid #f01385 2px;
+
+    padding-top: 20px;
+    
+    
+    background-color:rgba(0, 0, 0, 0.5);
+   
+    
+
+}
 .welcome-message{
     background-image: url(../images/main-banner.jpg);
     background-position: center center;
@@ -235,10 +261,11 @@ a:visited{
     padding-bottom: 80px;
 }
 .welcome-message h1{
+    
     font-size:55px;
     font-weight: bold;
     color: white;
-    margin-top: 80px;
+   
     padding-bottom: 40px;
 }
 .welcome-message p{
@@ -249,15 +276,7 @@ a:visited{
 
     
 }
-.welcom-area-container{
-    
-    
-    background-color:rgba(0, 0, 0, 0.5);
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 30px;
 
-}
 
 /* */
 .link-button{
@@ -317,18 +336,18 @@ a:visited{
 
 
 
-.box-2{
+.service_info , .team {
     background-color:#ffe6ac;
     padding-left: 10px;
     padding-bottom: 10px;
    
 
 }
-.box-2 h3{
+.service_info h3{
     font-size: 1.5rem;
-    
+    !
 }
-.box-1{
+.services{
    
     margin:0 10px 10px 10px
 }
@@ -515,41 +534,264 @@ footer a{
 
 /* -----------------Media Query starts here ----------------*/
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px)  {
 
-    /*google font applied to the wrapper*/
-        .wrapper{
-        border:solid rgb(236, 25, 6) 1px;
+    
+    .wrapper{
+    box-sizing: border-box;
+    border:solid rgb(19, 31, 165) 1px;
+
+    }
+    .container-m{
+        border:solid rgb(73, 190, 22) 2px;
+        margin:0 50px 0 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        
+    }
+
+    
+    .navbar-container{
+      
+        background-color: aqua;
+        height: 100px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       
+
+
+        
+        border:solid rgb(228, 33, 179) .5rem;
+            /* background-color: #222; */
+
+    }
+    
+    li{
+        display: inline-block;
+               
+            }
+      
+    
+    .navbar{
+    
+    background-color:#222;
+        
+    }
+    .main-nav    {
+        position:relative;
+        
+    }
+    .main-nav ul{
+        
+        padding: 1px;
+        text-align: center;
+        
+        
+    }
+    .main-nav ul li {
+        
+        background-color: #222;
+        white-space: nowrap;
+        
+        
+        
+    }
+    .logo-container{
+        align-items: flex-start;
+    }
+    .logo{
+        padding:0;
+        cursor: pointer;
+        
+    
+    }
+    /* About us section in MQ they should be disply flex and apply width the background color to be full width of wrapper  */
+    .wrapper{
+        border: #5196b5 solid 10px;
+    }
+    .about-us-container{
+        padding: 0;
+    }
+    .about-us-box{
+        background-color: #ffe6ac;
+        display: flex;
+    }
+    .imag-about-us{
+        width: 50%;
+    }
+    .about-us{
+        padding-left: 10px;
+    }
+    .box-1{
+        margin: 0;
+        width: max-content
+    }
+
+    /* Our service in MQ to use display grid and assign size and posesion  
+    */
+
+    .our-services-container{
+        
+    
+        padding: 0;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(0, 1fr));
+        /* grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1.1fr 1fr; */
+        
+    }
+    .services{
+        margin: 0;
+    }
+    .digital{
+        
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:2;
+    
+
+
+
+    }
+    .marketing{
+        
+        grid-column-start:4;
+        grid-column-end:7;
+        grid-row-start:1;
+        grid-row-end:2;
+        
+
+
+
+    }
+    .video{
+        
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end:3;
+    ;
+
+
+
+    }
+    .web{
+        
+        grid-column-start:3;
+        grid-column-end:5;
+        grid-row-start:2;
+        grid-row-end:3;
+        
+
+
+
+    }
+    .print{
+        
+        grid-column-start:5;
+        grid-column-end:7;
+        grid-row-start:2;
+        grid-row-end:3;
+    
+
+
+
+    }
+    .box-1{
+        border: #14f308 solid 15px;
+        width:auto;
+
+    
+    }
+
+
+    .plans-button {
+        
+        
+        width:auto;
+        margin:0;
+        
+        
+    }
+
+    .service_info{
+        padding:10px;
+        margin: 0;
+    }
+
+    /* our visin container  */
+    .learn-more{
+        max-width: 200px;
+
+    }
+
+    /* our team container we need to disply grid and control posesion by using span   */
+
+    .ceo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bob-info{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3 ;
+
+    }
+    .Bob-image-box{
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+    }
+    hr {
+        border-top: 1px solid #ea5809;
+    }
+
+
+        
+    /* Contact us container we need to disply grid and control posesion by using span   */
+    .contact-us{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-us h2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .imp-map{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3 ;
+
+    }
+    .table-time{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4 ;
 
         }
-        .container-m{
-            border:solid rgb(73, 190, 22) 2px;
-            margin:0 50px 0 50px;
-           
-            
+        .message-container button{
+        color: #c78c06;
+        font-size: 1.2rem;
         }
-        .navbar-container{
-            display: flex;
-
-            
-                border:solid rgb(228, 33, 179) .5rem;
-                background-color: #222;
-
+        footer {
+        color: #ffe6ac;
         }
-        ul{
-            display: flex;
-        }
-        .logo-container{
-            background-color:transparent
-        }
+        a{
+        color: #ffe6ac;
+    }
 
 
-
-            
-        }
-
-
-
-        }
+}
 
 

@@ -29,7 +29,7 @@
                 <nav class="main-nav">
 
                     <ul>
-                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#" class="active" >Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Team</a></li>
@@ -41,7 +41,7 @@
                 </nav>
                 <div class="search-box-wrapper">
                     <input type="text" placeholder="Search" class="search-box-input"> 
-                    <div class="mag-box">
+                    <div class="magnifier-box">
                         <i class="fa-solid fa-magnifying-glass"></i>
 
                     </div>               
@@ -83,19 +83,21 @@
             
         </header>
         <!-- this section to contain the  imag and (About Us) text-->
-        <section class="about-us-container container-m">
+        <section class="about-us-container ">
         
+            <div class="container-m about-us-box">
+                    <img class="imag-about-us" src="images/about-us.jpg" alt="image">
             
-            
-            <img class="imag-about-us" src="images/about-us.jpg" alt="image">
-        
-            <div class="abut-us">
-                <h2>About US</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt itaque in nulla libero placeat. Tenetur explicabo minima dolores. Rem beatae sit necessitatibus alias iure ipsa blanditiis nihil ex earum.</p>
-                
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci repellendus iure quo ea harum ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci repellendus iure quo ea harum!</p>
+                <div class="about-us">
+                    <h2>About US</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt itaque in nulla libero placeat. Tenetur explicabo minima dolores. Rem beatae sit necessitatibus alias iure ipsa blanditiis nihil ex earum.</p>
+                    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci repellendus iure quo ea harum ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci repellendus iure quo ea harum!</p>
 
+                </div>
             </div>
+            
+            
 
             
                 
@@ -108,32 +110,31 @@
 
             
             <h2>Our Services</h2>
-            <div class=" our-services-container">
-                <div class=" box-1 pattern digital">
-                    <img src="images/digital.jpg" alt="digital tranformation image">
-                    <div class="box-2">
+            <div class="our-services-container">
+                <div class="services digital">
+                    <img src="images/digital.jpg" alt="digital image">
+                    <div class="service_info">
                         <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit!</p>
-                    <div class="plans-button">
-                        
-                        <form method="get" action="/our_plans_button">
-                            <button type="submit">Digital Plans</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                        <div class="plans-button">
                             
-                        </form>
-                        <i class="fa-solid fa-play"></i>
-    
-                    
-    
-                    </div>  
-
+                            <form method="get" action="/marketing-information">
+                                <button type="submit">Digital Plans</button>
+                                
+                            </form>
+                            <i class="fa-solid fa-play"></i>
+        
+                        
+        
+                        </div>   
                     </div>
                     
                     
                 </div>
     
-                <div class="box-1 pattern marketing">
+                <div class="services marketing">
                     <img src="images/marketing.jpg" alt="marketing image">
-                    <div class="box-2">
+                    <div class="service_info">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit ipsum dolor sit amet consectetur adipisicing elit. !</p>
                         <div class="plans-button">
@@ -152,14 +153,14 @@
                     
                 </div>
     
-                <div class="box-1 pattern Video">
-                    <img src="images/video.jpg" alt="Video image">
-                    <div class="box-2">
+                <div class="services video">
+                    <img src="images/video.jpg" alt="video image">
+                    <div class="service_info">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit!</p>
                         <div class="plans-button">
                             
-                            <form method="get" action="/Video_production">
+                            <form method="get" action="/video_production">
                                 <button type="submit">Video Plans</button>
                                 
                             </form>
@@ -173,9 +174,9 @@
                     
                 </div>
     
-                <div class="box-1 pattern web">
+                <div class="services web">
                     <img src="images/web.jpg" alt=" image">
-                    <div class="box-2">
+                    <div class="service_info">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit!</p>
                         <div class="plans-button">
@@ -194,9 +195,9 @@
                     
                 </div>
     
-                <div class="box-1 pattern web">
+                <div class="services print">
                     <img src="images/print.jpg" alt=" image for print plan">
-                    <div class="box-2">
+                    <div class="service_info">
                             <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione cumque dolore necessitatibus commodi odit!</p>
                         <div class="plans-button">
@@ -236,7 +237,7 @@
 
 
             </div>
-            <div class="learn-more">
+            <div class="learn-more container-m">
                 <form method="get" action="/learn-more">
                     <button type="submit">Learn More</button>
                     
@@ -254,10 +255,13 @@
             <h2>Our Team</h2>
             <div class="container-2">
                
-                <div class="ceo">
-                    <img class="gohn-image" src="images/john.jpg" alt="image for ceo">
+                <div class="ceo ">
+                    <div class="gohn-image-box">
+                        <img class="gohn-image a" src="images/john.jpg" alt="image for ceo">
+
+                    </div>
                     
-                    <div class="box-2 jhon-info">
+                    <div class="team jhon-info b">
                         <h3>John Doe</h3>
                         <h4>CFO and Co-owner</h4>
                         <hr>
@@ -265,10 +269,13 @@
                     
 
                     </div>
+                    <div class="Bob-image-box">
+                         <img class=" Bob-image c " src="images/bob.jpg" alt="image for ceo">
 
-                    <img class=" Bob-image" src="images/bob.jpg" alt="image for ceo">
+                    </div>
+
                     
-                    <div class="box-2 bob-info">
+                    <div class="team bob-info d">
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
                         <hr>
@@ -283,66 +290,66 @@
 
             </div>
         </section>
-        <section class="contact-us">
-            <div class="container container-m">
-                <h2>Contact us</h2>
-                <div class="message-container">
-                    
-                    <h3>Send us a message</h3>
-                    <div class="form-group">
-                        <label for="full-name" class="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="full-name">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="email">Email</label>
-                        <input type="email" id="email" name="email">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                    </div>
-                    <button type="submit">send</button>
-
-                    
-
+        <section class="contact-us container container-m">
+            
+            <h2>Contact us</h2>
+            <div class="message-container">
+                
+                <h3>Send us a message</h3>
+                <div class="form-group">
+                    <label for="full-name" class="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name">
 
                 </div>
-                <div class="table-time">
-                    <h3>Hours of operation</h3>
-                    
-                    <table class="content-table">
-                        
-                        <thead>
-                          <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                            
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Monday-Friday</td>
-                            <td>9 AM -6 Pm</td>
-                            
-                          </tr>
-                          <tr>
-                            <td>Saturday-Sunday</td>
-                            <td>closed</td>
-                            
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="form-group">
+                    <label for="email" class="email">Email</label>
+                    <input type="email" id="email" name="email">
 
                 </div>
-                <div class="imp-map">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9499544873997!2d-75.75609892720333!3d45.34982249093983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648820024016!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="form-group">
+                    <label for="message" class="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
                 </div>
+                <button type="submit">Send</button>
+
+                
+
+
             </div>
+            <div class="table-time">
+                <h3>Hours of operation</h3>
+                
+                <table class="content-table">
+                    
+                    <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>9 AM -6 Pm</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Saturday-Sunday</td>
+                        <td>closed</td>
+                        
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="imp-map">
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9499544873997!2d-75.75609892720333!3d45.34982249093983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648820024016!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        
         </section>
         <footer>
             <div class="container container-m">
