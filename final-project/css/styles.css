@@ -60,7 +60,6 @@ html {
 }
 .wrapper{
     max-width:1200px ;
-   
     padding-bottom: 20px;
     
     
@@ -89,158 +88,87 @@ p{
     
 }
 
-/* -----------------The header is the parent for log navbar and search box,nav at mobile to be column shape and row sahpe atdesktop, best to use flex  a*/
-.container{
-   
-    padding-left: 20px;
-    
-}
+/* -----------------The header is the parent for logo, navbar and search box,we apply display flex for the li items and center it horizontally and vertically */
 
-.navbar{
-   
-    background-color:#222;
-    
-}
-.main-nav    {
-    position:relative;
-    
-}
-.main-nav ul{
-    
-    padding: 1px;
-    text-align: center;
-    
-    
-}
-.main-nav ul li {
-    
+header{
     background-color: #222;
-    white-space: nowrap;
-    
-    
-    
-}
-.main-nav ul li a {
-    color:#ffe6ac ;
-    display: block;
-    font-size: 20px;
-    margin-top: -1px;
-    
-    
-    width:30%;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom:15px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.main-nav ul li a.active{
-    background-color: #c78c06;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -50px;
+    padding:10px;
 
-
-    display: block;
-    
-   
-   
-    
-   
-    
-   
-    
 }
-.main-nav ul li a:hover {
-    background: #c78c06
-}
-
 
 .logo-container{
+    background-color: #c78c06;
+    height: 150px;
+    padding-top: 20px;
+}
+
+.nav-bar {     
+    margin: auto;
+    text-align: center;    
+    background-color: transparent;
+}
+
+.nav-bar ul{
     
+    
+}
+
+.nav-bar ul li{
     display: flex;
     align-items: center;
-    background-color:  #c78c06;
-    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    height: 40px;
+
+}
+
+.nav-bar ul li:nth-child(1){
+    
+    background-color: #c78c06;
+   
+}
+
+
+.nav-bar ul li a{
+    
+    text-decoration: none;
+    min-width: 10%;
+    padding: 10px;
+    color: #c78c06;
     
 }
-.logo{
-    padding-top:18px ;
-    padding-bottom: 84px;
-    cursor: pointer;
+
+.nav-bar ul li a:hover {
+    background: #c78c06;
+    color:#ffe6ac;
+}  
+  
+        
+.nav-bar ul li a.active{
+    color: #222;
+    background-color: #c78c06;
 }
+    
 .search-box-wrapper{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#222; 
-    color: #ffe6ac;
-    padding: 0px 15px 15px 15px;
-   ;
-   
-   
-   
     
     
-}
-.search-box-wrapper input {
-    
-    width: 100%;
-    font-size: 20px;
-    padding:15px 0 15px 15px;
-    border: none;
-   
-    
-    
-   
 }
 .magnifier-box{
-    display: flex;
-    align-items: center;
-    background-color:#222
-    margin: 0;
-    
-    height: 54px;
-    text-align: center;
-   
-    border: solid 1px;
+    margin: auto;
+    padding: 5px;
+    border:solid #c78c06 1px;
+    color: #c78c06;
+    cursor:pointer ;
 }
-i{
-    width: 50px;
-    text-align: center;
-    font-size:22px ;
-    cursor: pointer;
-   
-    
-}
-::placeholder{
-    color: rgb(57, 62, 62);
-
-}
-
-
-
-
-
-/*a:link {background-color: #f67316;
-    
-    
-}
-a:visited{
-    background-color: ;
-    
-}*/
-
-
 
 
 /* Welcome section has a background image with header and paragraph and buttin */
 
-.welcom-area-container{
-    border:solid #f01385 2px;
+.welcome-area-container{
+   
 
     padding-top: 20px;
     
@@ -254,11 +182,11 @@ a:visited{
     background-image: url(../images/main-banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    
     background-size:100% 100% ;
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 80px;
+    
 }
 .welcome-message h1{
     
@@ -267,18 +195,18 @@ a:visited{
     color: white;
    
     padding-bottom: 40px;
+    padding-left: 10px;
 }
 .welcome-message p{
     
     color: white;
+    padding-left: 10px;
    
     
 
     
 }
 
-
-/* */
 .link-button{
     
     display: flex;
@@ -286,9 +214,9 @@ a:visited{
     align-items: center;
     height: 90px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    width: 275px;  
-   
+    margin-bottom: 10px;
+    width: 275px;
+    margin-left: 10px;
     background-color: #c78c06;
     
 }
@@ -314,8 +242,6 @@ a:visited{
     width: 100%;
     
 }
-
-
 
 
 /* our service as hero section  we should  use grid to arrange service divisions in media query   */
@@ -359,13 +285,10 @@ a:visited{
     align-items: center;
     height: 90px;
     margin-top: 10px;
-    margin-bottom: 10px;
     width: 275px;
-      
-   
     background-color:black
-    
-}
+
+    }
 .plans-button button{
     font-size: 20px;
     border: none;
@@ -413,7 +336,7 @@ a:visited{
     align-items: center;
     height: 90px;
     margin-top: 10px;
-    margin-bottom: 10px;
+   
     margin-left: 10px;
     width: 275px;
       
@@ -452,8 +375,11 @@ h4{
     background-color: white;
     margin:0 15px 15px 15px;
 }
+/* to style the hr line under the CFO in our team. It is effective way to get red of the 3d effect that wuold apper if use only border-top   */
 hr{
-    border-top: solid #222 2px;
+    border:none;
+    height:2px;
+    background-color: #c78c06;
     margin-right: 15px;
 }
 .ceo .box-2{
@@ -462,6 +388,7 @@ hr{
 
 /* contact us form to apply full container width   */
 .contact-us{
+    padding: 10px;
     background-color: white;
     margin-top: 0;
 }
@@ -490,10 +417,11 @@ textarea{
     padding-right: 15px;
 }
 
+
 .content-table{
     border-collapse: collapse;
     
-    margin: 25px 0;
+    
     font-size: 0.9em;
     min-width: 100%;
     
@@ -509,7 +437,10 @@ textarea{
 .content-table thead th {
     border: solid #222 1px;
 }
-
+.message-container button{
+    color: #c78c06;
+    
+}
 
 
 /* Impeded map styling to have it responsive map width 100%    */
@@ -525,6 +456,7 @@ iframe{
 /* Footer with copright paragrapth and source paragraph     */
 footer{
     padding-top: 10px;
+    padding-left: 10px;
     background-color: #222;
     color: white;
 }
@@ -539,78 +471,68 @@ footer a{
     
     .wrapper{
     box-sizing: border-box;
-    border:solid rgb(19, 31, 165) 1px;
+    
 
     }
+
     .container-m{
-        border:solid rgb(73, 190, 22) 2px;
+        
         margin:0 50px 0 50px;
         padding-top: 5px;
         padding-bottom: 5px;
         
         
     }
-
-    
-    .navbar-container{
-      
-        background-color: aqua;
-        height: 100px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
+    header{
+        background-color:#222
+    }
+    .nav-logo-box{
+        margin:0 50px 0 50px;
        
-
-
         
-        border:solid rgb(228, 33, 179) .5rem;
-            /* background-color: #222; */
-
-    }
-    
-    li{
-        display: inline-block;
-               
-            }
-      
-    
-    .navbar{
-    
-    background-color:#222;
+        display:flex;
+     
         
-    }
-    .main-nav    {
-        position:relative;
-        
-    }
-    .main-nav ul{
-        
-        padding: 1px;
-        text-align: center;
-        
-        
-    }
-    .main-nav ul li {
         
         background-color: #222;
-        white-space: nowrap;
-        
-        
+    }
+    .nav-bar{
+        width:100%;
+       
+        display: flex;
+        justify-content:space-between;
+        margin-left: 1.2rem;
         
     }
+    .nav-bar ul{
+        width: 65%;
+        margin-right: 10px;
+       
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .search-box-wrapper{
+       
+        width: 35%;
+
+    }
     .logo-container{
-        align-items: flex-start;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        
     }
     .logo{
         padding:0;
+        margin: 0;
         cursor: pointer;
         
     
     }
     /* About us section in MQ they should be disply flex and apply width the background color to be full width of wrapper  */
-    .wrapper{
-        border: #5196b5 solid 10px;
-    }
+    
     .about-us-container{
         padding: 0;
     }
@@ -656,9 +578,6 @@ footer a{
         grid-row-start:1;
         grid-row-end:2;
     
-
-
-
     }
     .marketing{
         
@@ -667,9 +586,6 @@ footer a{
         grid-row-start:1;
         grid-row-end:2;
         
-
-
-
     }
     .video{
         
@@ -677,10 +593,7 @@ footer a{
         grid-column-end:3;
         grid-row-start:2;
         grid-row-end:3;
-    ;
-
-
-
+    
     }
     .web{
         
@@ -689,9 +602,6 @@ footer a{
         grid-row-start:2;
         grid-row-end:3;
         
-
-
-
     }
     .print{
         
@@ -700,25 +610,19 @@ footer a{
         grid-row-start:2;
         grid-row-end:3;
     
-
-
-
     }
-    .box-1{
-        border: #14f308 solid 15px;
+    /* .box-1{
+ 
         width:auto;
 
-    
-    }
+    } */
 
 
     .plans-button {
-        
-        
+                
         width:auto;
         margin:0;
-        
-        
+                
     }
 
     .service_info{
@@ -751,11 +655,11 @@ footer a{
 
     }
     hr {
-        border-top: 1px solid #ea5809;
+        border:none;
+        height:2px;
+        background-color: #c78c06;
     }
-
-
-        
+ 
     /* Contact us container we need to disply grid and control posesion by using span   */
     .contact-us{
         display: grid;
