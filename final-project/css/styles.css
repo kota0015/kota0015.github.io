@@ -52,7 +52,7 @@ table {
 
 
 
-/*google font applied to the wrapper*/
+/*google font applied to the wrapper with some general styling sets*/
 html {
     box-sizing: border-box;
     
@@ -385,6 +385,9 @@ hr{
 .ceo .box-2{
     margin-bottom: 15px;
 }
+.ceo p{
+    margin-right: 10px;
+}
 
 /* contact us form to apply full container width   */
 .contact-us{
@@ -458,10 +461,10 @@ footer{
     padding-top: 10px;
     padding-left: 10px;
     background-color: #222;
-    color: white;
+    color:#ffe6ac;
 }
 footer a{
-    color: white;
+    color: #ffe6ac;
 }
 
 /* -----------------Media Query starts here ----------------*/
@@ -505,7 +508,7 @@ footer a{
         
     }
     .nav-bar ul{
-        width: 65%;
+        width: 70%;
         margin-right: 10px;
        
         display: flex;
@@ -515,7 +518,7 @@ footer a{
 
     .search-box-wrapper{
        
-        width: 35%;
+        width: 25%;
 
     }
     .logo-container{
@@ -622,6 +625,13 @@ footer a{
                 
         width:auto;
         margin:0;
+     
+                
+    }
+    .plans-button {
+                
+        width:auto;
+        margin:0;
                 
     }
 
@@ -635,8 +645,11 @@ footer a{
         max-width: 200px;
 
     }
+    .learn-more{
+        border: #c78c06 solid 1px;
+    }
 
-    /* our team container we need to disply grid and control posesion by using span   */
+    /* our team container we need to disply grid and control posesion by using span, could cinsider clearfix as another solution option try to consider this???   */
 
     .ceo{
         display: grid;
@@ -661,6 +674,10 @@ footer a{
     }
  
     /* Contact us container we need to disply grid and control posesion by using span   */
+
+    input , textarea{   
+        margin-top: 5px;
+    }
     .contact-us{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -684,17 +701,19 @@ footer a{
         grid-row-end: 4 ;
 
         }
-        .message-container button{
+    .message-container button{
         color: #c78c06;
         font-size: 1.2rem;
+        margin-top: 20px;
         }
-        footer {
+    footer {
         color: #ffe6ac;
+        margin-top: 5px;
         }
-        a{
+    footer a{
         color: #ffe6ac;
     }
-
+    
 
 }
 
